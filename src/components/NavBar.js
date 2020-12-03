@@ -13,8 +13,8 @@ class NavBar extends Component {
                         <a class="navbar-brand" href="#">
                             
                             <picture>
-                                <source media="(max-width: 500px)" srcset={home_icon}></source>
-                                <source media="(min-width: 501px)" srcset={home_icon_big}></source>
+                                <source media="(max-width: 500px)" srcSet={home_icon}></source>
+                                <source media="(min-width: 501px)" srcSet={home_icon_big}></source>
                                 <img src={home_icon} alt="Carbon futures icon"></img>
                             </picture>
                             
