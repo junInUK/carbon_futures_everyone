@@ -4,55 +4,32 @@ import '../App.css';
 class Footer extends Component {
     render(){
         return (
-            <div>
+            <div id="bigfooter">
                 <hr/>
-                <div class="card-group" id="footer">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <ul>
-                                <li>enquiries@carbonfutures.co.uk</li>
-                                <li>+44(0)141 280 8022</li>
-                                <li>Contact us</li>
-                            </ul>
-                        </div>
+                <div class="row" id="footer">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <ul>
+                            <li>enquiries@carbonfutures.co.uk</li>
+                            <li>+44(0)141 280 8022</li>
+                            <li>Contact us</li>
+                        </ul>
                     </div>
-                    <div class="card border-0">
-                        <div class="card-body">
-                            
-                        </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3">
+                        <ul>
+                            <li>Services</li>
+                            <li>Works</li>
+                            <li>Experts</li>
+                            <li>Articles</li>
+                            <li>About</li>
+                        </ul>
                     </div>
-                    <div class="card border-0">
-                        <div class="card-group">
-                            <div class="card border-0">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Services</li>
-                                        <li>Works</li>
-                                        <li>Experts</li>
-                                        <li>Articles</li>
-                                        <li>About</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>
-                                            Linkedin
-                                        </li>
-                                        <li>
-                                            Twitter
-                                        </li>
-                                        <li>
-                                            Instagram
-                                        </li>
-                                        <li>
-                                            Subscribe
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3">
+                        <ul>
+                            <li>Linkedin</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Subscribe</li>
+                        </ul>
                     </div>
                 </div>
             </div>

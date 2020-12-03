@@ -1,15 +1,23 @@
 import React, { Component } from "react";
-import home_icon from '../assets/carbon_futures.ico';
+import home_icon from '../assets/carbon_futures_with_text.ico';
+import home_icon_big from '../assets/carbon_futures_with_text_big.png';
 import { Link } from "react-router-dom";
+import '../App.css';
 
 class NavBar extends Component {
     render(){
         return (
-            <div id="nav">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light flex-center">
+            
+                <nav class="nav navbar navbar-expand-lg navbar-light bg-light flex-center">
                     <Link to = "/">
                         <a class="navbar-brand" href="#">
-                            <img src={home_icon} alt="Carbon futures icon"></img>
+                            
+                            <picture>
+                                <source media="(max-width: 500px)" srcset={home_icon}></source>
+                                <source media="(min-width: 501px)" srcset={home_icon_big}></source>
+                                <img src={home_icon} alt="Carbon futures icon"></img>
+                            </picture>
+                            
                         </a>
                     </Link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +55,8 @@ class NavBar extends Component {
                         </ul>
                     </div>
                 </nav>
-            </div>
+            
+            
         );
     }   
 }

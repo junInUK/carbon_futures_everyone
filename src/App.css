@@ -42,15 +42,39 @@ font{
 }
 
 /* **************** Nav ************************ */
-div#nav{
-  text-align: center
+nav.nav{
+  position: sticky;           /* other browsers */
+  position: -webkit-sticky;   /* safari */
+  
+  top: 0px;
+  
+	overflow: hidden;
+  z-index: 9999;
+  width: 100%;
+}
+
+a:link{
+  
+  color: green;
+}
+
+nav.nav ul a:hover{
+  text-decoration: none;
+  color: orange;
+  font-weight: bolder;
 }
 
 /* **************** Footer ********************* */
+#footer{
+  background-color: darkslategrey;
+  color: white;
+  padding-top: 30px;
+}
+
 div#footer ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 20;
+  padding: 20;
 }
 
 /* *************** Home ************************ */
@@ -84,10 +108,59 @@ p.card-subtitle{
   position: -webkit-sticky;   /* safari */
   width: 100px;
   height: 50px;
-  top: 70px;
+  top: 100px;
   
 }
 
 .wrapper {
   height: 100%;
+}
+
+/* ***************** About ******************** */
+div#about h4{
+  text-align: center;
+}
+
+div#about p{
+  text-align: center;
+}
+
+/* ***************** Services ****************** */
+div#services h4.center{
+  text-align: center;
+}
+
+div#services img{
+  margin: 0 auto;
+}
+
+.row-centered{
+  text-align:center;
+}
+
+/* ***************** Projects ****************** */
+div#projects h4.center{
+  text-align: center;
+}
+
+div#projects p.center{
+  text-align: center;
+}
+
+/* ***************** Articles ****************** */
+div#articles h4.center{
+  text-align: center;
+}
+
+div#articles p.center{
+  text-align: center;
+}
+
+/* ***************** Contact ****************** */
+div#contact h4.center{
+  text-align: center;
+}
+
+div#contact p.center{
+  text-align: center;
 }
